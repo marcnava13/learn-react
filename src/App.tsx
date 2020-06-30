@@ -5,6 +5,8 @@ import "./styles.css";
 import { Todo } from "./Interfaces/Todo";
 import { Form } from "./Components/Form";
 import { List } from "./Components/List";
+import { Timer } from "./Components/Timer";
+
 
 export default function App() {
     /**
@@ -25,6 +27,7 @@ export default function App() {
         <div className="App">
             <h1>TODO List</h1>
             <Form todos={todos} setTodos={setTodos} />
+            <Timer />
             <List todos={todos} setTodos={setTodos} />
         </div>
     );
